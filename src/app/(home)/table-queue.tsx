@@ -13,10 +13,14 @@ import { Caller } from "./caller";
 export function TableQueue() {
   return (
     <Table>
-      <TableCaption>daftar antrian (Rakhmat&apos;s Project).</TableCaption>
+      <TableCaption>
+        Sample Daftar Antrian (Rakhmat&apos;s Project).
+      </TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px] font-medium">No Antrian</TableHead>
+          <TableHead className="w-[100px] whitespace-nowrap font-medium">
+            No Antrian
+          </TableHead>
           <TableHead className="font-medium">Kategori</TableHead>
           <TableHead className="sr-only">Actions</TableHead>
         </TableRow>

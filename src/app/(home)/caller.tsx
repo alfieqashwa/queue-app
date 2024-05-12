@@ -19,7 +19,7 @@ export function Caller({
       queueNo.charAt(0) + "," + queueNo.slice(1).split("").join("-");
 
     const speech = new SpeechSynthesisUtterance(
-      `Nomor antrian ${formattedQueueNo}, silakan menuju ke loket ${category}.`
+      `Nomor antrian, ${formattedQueueNo}, silakan menuju ke loket ${category}.`
     );
     speech.lang = "id-ID";
 
