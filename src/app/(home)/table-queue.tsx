@@ -30,10 +30,7 @@ export function TableQueue() {
           <TableRow key={i}>
             <TableCell className="font-medium">{q.queueNo}</TableCell>
             <TableCell className="capitalize">{q.category}</TableCell>
-            <TableCell className="w-[100px]">
-              <Caller queueNo={q.queueNo} category={q.category} />
-            </TableCell>
-            <TableCell className="w-[100px]">Done</TableCell>
+            <Caller queueNo={q.queueNo} category={q.category} />
           </TableRow>
         ))}
       </TableBody>
