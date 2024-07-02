@@ -4,8 +4,8 @@
 export SKIP_ENV_VALIDATION=true
 
 # Default target to start Docker Compose
-.PHONY: up
-up:
+.PHONY: start
+start:
 	@echo "Starting Docker Compose with SKIP_ENV_VALIDATION=${SKIP_ENV_VALIDATION}"
 	SKIP_ENV_VALIDATION=${SKIP_ENV_VALIDATION} docker compose up -d
 
@@ -16,14 +16,14 @@ watch:
 	SKIP_ENV_VALIDATION=${SKIP_ENV_VALIDATION} docker compose watch
 
 # Target to stop Docker Compose
-.PHONY: down
-down:
+.PHONY: stop
+stop:
 	@echo "Stopping Docker Compose"
 	docker compose down
 
 # Target to restart Docker Compose
 .PHONY: restart
-restart: down up
+restart: stop start
 
 # Target to build Docker Compose services
 .PHONY: build
