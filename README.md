@@ -1,9 +1,5 @@
 # queue app
 
-## Created by Alfie Qashwa
-
-## Repo: https://github.com/alfieqashwa/queue-app.git
-
 ### Start: make up
 
 ### Stop: make down
